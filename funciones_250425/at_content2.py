@@ -10,7 +10,8 @@ def at_content(dna, sig_figs):
     return round(at_content, sig_figs)
 
 # Llamados de funcion
-resultado = at_content("GCAAATGACCGCATATCGATGATCGATTA", 1)
+# Solo se vale en pasos de parametros combinados primero orden y despues por nombre, lo contrario da error.
+resultado = at_content("GCAAATGACCGCATATCGATGATCGATTA", sig_figs= 1) 
 print(resultado)
 
 at_content(dna = "atcagtacgtaaatgtccatgg", sig_figs = 2)
