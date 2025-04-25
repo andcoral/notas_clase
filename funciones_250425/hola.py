@@ -1,6 +1,6 @@
 # Definimos funcion
-def di_hola():
-    print("Hola!")
+def di_hola(nombre):
+    print(f"Hola, {nombre}!")
 
 # Llamamos funcion
-di_hola()
+di_hola("mundo")
