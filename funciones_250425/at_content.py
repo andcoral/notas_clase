@@ -1,4 +1,5 @@
 def at_content(dna):
+    dna = dna.upper()
     length = len(dna)
     a_count = dna.count('A')
     t_count = dna.count('T')
@@ -6,3 +7,4 @@ def at_content(dna):
     print(at_content)
 
 at_content("GCAAATGACCGCATATCGATGATCGATTA")
+at_content("atcagtacgtaaatgtccatgg")
