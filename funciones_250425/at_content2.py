@@ -13,5 +13,5 @@ def at_content(dna, sig_figs):
 resultado = at_content("GCAAATGACCGCATATCGATGATCGATTA", 1)
 print(resultado)
 
-at_content("atcagtacgtaaatgtccatgg", 2)
+at_content(dna = "atcagtacgtaaatgtccatgg", sig_figs = 2)
 print(resultado)
