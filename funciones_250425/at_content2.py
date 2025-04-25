@@ -18,10 +18,9 @@ def at_content(dna, sig_figs):
     at_content = (a_count + t_count) / length
     return round(at_content, sig_figs)
 
-# Llamados de funcion
-# Solo se vale en pasos de parametros combinados primero orden y despues por nombre, lo contrario da error.
-resultado = at_content("GCAAATGACCGCATATCGATGATCGATTA", sig_figs= 1) 
-print(resultado)
-
-at_content(dna = "atcagtacgtaaatgtccatgg", sig_figs = 2)
-print(resultado)
+# Llamados de funcion y testing
+assert at_content("ATGC", 1) == 0.5
+# Casos en que falla:
+assert at_content("ATGCNNNNN", 1) == 0.5
+assert at_content("", 1) == 0.5
+assert at_content("ATGC", -1) == 0.5
