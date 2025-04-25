@@ -8,4 +8,4 @@ def count_bases(dna):
         print(f"{base} {numbases}")
 
 # Llamado de funcion
-print(count_bases("GTACAGTTTAGGCATTGTTATGAC"))
+count_bases("GTACAGTTTAGGCATTGTTATGAC")
