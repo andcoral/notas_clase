@@ -14,11 +14,15 @@ print(df[['Nombre', 'Edad']])
 print(df.loc[0]) # Accede a todos los datos de Ana vía NOMBRE fila
 print(df.loc[0]) # Accede a todos los datos de Ana vía ÍNDICE fila
 
-# IMpresion con condicion
+# Impresion con condicion
 print(df[df['Edad'] > 25]) # Imprime datos de personas mayores de 25
 
-# Multiples condiciones
-#print(df[])
+# Impresion con multiples condiciones
+# Cada condicion va encerrada en su propio parentesis. El corchete abarca a todas las condiciones
+print(df[(df['Edad'] > 25) & (df['Ciudad'] == 'CDMX')]) # Imprime datos de personas mayores de 25 y de la CDMX
 
-df['Ocupación'] = ['Médico', 'Economista', 'Genómico']
-print()
+# Agregar columna
+df['Ocupación'] = ['Médico', 'Economista', 'Genómico'] 
+# NO olvidar meter mismo numero de datos que ya contiene el dataframe
+print(df)
+

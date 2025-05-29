@@ -1,0 +1,5 @@
+GeneID,Nombre,Función,Longitud,Expresión
+b0001,thrL,regulador,117,20.5
+b0002,thrA,enzima,2340,50.2
+b0003,thrB,enzima,1461,45.0
+b0004,recA,reparación,1038,10.1
